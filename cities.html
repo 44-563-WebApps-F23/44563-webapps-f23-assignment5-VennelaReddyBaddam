@@ -7,32 +7,209 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light and bg-light">
+          <a class="navbar-brand" href="cities.html">A Few Cities</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="cities.html">CITIES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="basic.html">BASIC</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="advanced.html">ADVANCED</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <h1>Visit Cities with Vennela</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-2">B</div>
+              <div class="col-sm-2">A</div>
+              <div class="col-sm-2">D</div>
+              <div class="col-sm-2">D</div>
+              <div class="col-sm-2">A</div>
+              <div class="col-sm-2">M</div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md">Bangalore</div>
+          <div class="col-md">Amsterdam</div>
+          <div class="col-md">Dallas</div>
+          <div class="col-md">Delhi</div>
+          <div class="col-md">Ahmedabad</div>
+          <div class="col-md">Mumbai</div>
+      </div>
+      <p>Cities row breaks first:<br>
+          Because "col-md" divs accommodate the full width for the city names, causing the row to break. While "col-sm-2"
+          divs for the letters are designed to be more flexible</p>
   
-    <title> My Page </title>
-  <body>
-    <h1>Visit cities with Vennela</h1>
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-sm-2">B</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">D</div>
-            <div class="col-sm-2">D</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">M</div>
-        </div>
-        <div class="row">
-            
-            <div class="col-md">Barcelona</div>
-            <div class="col-md">Amsterdam</div>
-            <div class="col-md">Dallas</div>
-            <div class="col-md">Denver</div>
-            <div class="col-md">Athens</div>
-            <div class="col-md">Madrid</div>
-        </div>
-    </div>
-City row is breaking because of Columns without a Fixed Width
-Columns without a fixed width will try to adapt and stack vertically, allowing all the content to remain visible.
+      <div class="container">
+          <img src="Amsterdam.jpg" class="img-fluid" alt="Agra" width="300px" height="500px">
+          <img src="Dallas.jpg" class="img-fluid" alt="Dallas" width="300px" height="500px">
+          <img src="Bangalore.jpg" class="img-fluid" alt="Bangalore" width="300px" height="500px">
+      </div>
+  
+      <div class="container">
+          <img src="Amsterdam.jpg" class="img-thumbnail" alt="Amsterdam" width="300px" height="500px">
+          <img src="Dallas.jpg" class="img-thumbnail" alt="Dallas" width="300px" height="500px">
+          <img src="Bangalore.jpg" class="img-thumbnail" alt="Bangalore" width="300px" height="500px">
+      </div>
+  
+      <table class="table table-bordered table-striped table-hover table-compacted caption-top">
+          <caption>Letter, City, River and Tree</caption>
+          <thead>
+              <tr class="table-dark">
+                  <th scope="col">Letter</th>
+                  <th scope="col">City</th>
+                  <th scope="col">River</th>
+                  <th scope="col">Tree</th>
+              </tr>
+          </thead>
+          <tbody class="table-group-divider">
+              <tr class="table-primary">
+                  <th scope="row">B</th>
+                  <td>Bangalore</td>
+                  <td>Brahmaputra</td>
+                  <td>Banyan</td>
+              </tr>
+              <tr class="table-secondary">
+                  <th scope="row">A</th>
+                  <td>Amsterdam</td>
+                  <td>Aransas</td>
+                  <td>Almond</td>
+              </tr>
+              <tr class="table-success">
+                  <th scope="row">D</th>
+                  <td>Dallas</td>
+                  <td>Dolores</td>
+                  <td>Darkwood</td>
+              </tr>
+              <tr class="table-info">
+                  <th scope="row">D</th>
+                  <td>Delhi</td>
+                  <td>Dead</td>
+                  <td>Dragon</td>
+              </tr>
+              <tr class="table-warning">
+                  <th scope="row">A</th>
+                  <td>Ahmedabad</td>
+                  <td>Agua</td>
+                  <td>Apple</td>
+              </tr>
+              <tr class="table-danger">
+                  <th scope="row">M</th>
+                  <td>Mumbai</td>
+                  <td>Mahanadi</td>
+                  <td>Mango</td>
+              </tr>
+          </tbody>
+      </table>
+  
+      <div>
+          <button type="button" class="btn ">B</button>
+          <button type="button" class="btn">A</button>
+          <button type="button" class="btn ">D</button>
+          <button type="button" class="btn ">D</button>
+          <button type="button" class="btn ">A</button>
+          <button type="button" class="btn ">M</button>
+      </div>
+  
+      <br>
+  
+      <label>BUTTON GROUPS:</label>
+      <div>
+          <div class="btn-toolbar">
+              <div class="btn-group" aria-label="First button group">
+                  <button type="button" class="btn btn-success">B</button>
+                  <button type="button" class="btn btn-success">A</button>
+                  <button type="button" class="btn btn-success">D</button>
+              </div>
+              <div class="btn-group" aria-label="Second button group">
+                  <button type="button" class="btn btn-warning">D</button>
+                  <button type="button" class="btn btn-warning">A</button>
+              </div>
+              <div class="btn-group" aria-label="Third button group">
+                  <button type="button" class="btn btn-danger">M</button>
+              </div>
+          </div>
+  
+          <br>
+  
+          <div class="dropdown">
+              <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="basic.html">basic link</a></li>
+                  <li><a class="dropdown-item" href="advanced.html">advanced link</a></li>
+              </ul>
+          </div>
+      </div>
+      <br>
+      <form>
+          <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control" placeholder="Enter Your City">
+          </div>
+          <div class="form-check">
+              <label class="form-check-label">Sign up for newsletter?</label>
+              <input type="checkbox" class="form-check-input">
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+  
+      </form>
+      <br>
+  
+      <div class="card" style="width: 18rem" margin="1rem">
+          <img src="Amsterdam.jpg">
+          <div class="card-body">
+              <h5 class="card-title">Amsterdam</h5>
+              <p class="card-text">Amsterdam is the Netherlands’ capital, known for its artistic heritage, 
+                elaborate canal system and narrow houses with gabled facades, legacies of the city’s 17th-century Golden Age. 
+                Its Museum District houses the Van Gogh Museum
+              </p>
+              <button class="btn btn-info" type="button">
+                  <a href="https://en.wikipedia.org/wiki/Amsterdam">City-1</a>
+              </button>
+          </div>
+          <div class="card" style="width: 18rem" margin="1rem">
+              <img src="Bangalore.jpg">
+              <div class="card-body">
+                  <h5 class="card-title">Bangalore</h5>
+                  <p class="card-text"> Bangalore is an anglicised version of the city's Kannada name Bengalūru.
+                     It was the name of a village near Kodigehalli in Bangalore city today and was used by Kempe Gowda to name the city as Bangalore at the time of its foundation in 1537.
+                  </p>
+                  <button class="btn btn-info" type="button">
+                      <a href="https://en.wikipedia.org/wiki/Bangalore">City-2</a>
+                  </button>
+              </div>
+          </div>
+          <div class="card" style="width: 18rem" margin="1rem">
+              <img src="Dallas.jpg">
+              <div class="card-body">
+                  <h5 class="card-title">Dallas</h5>
+                  <p class="card-text">Dallas is a city in Texas and the most populous in the Dallas–Fort Worth metroplex,
+                     the fourth-largest metropolitan area in the United States at 7.5 million .
+                  </p>
+                  <button class="btn btn-info" type="button">
+                      <a href="https://en.wikipedia.org/wiki/Dallas">City-3</a>
+                  </button>
+              </div>
+          </div>
 
 </body>
 </html>
